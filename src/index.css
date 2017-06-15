@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Noto Sans, sans-serif;
+}
+
+a {
+    background-color: grey;
+    color: #223344;
+    text-decoration: none;
+}
+
+.flag-at::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../var/at.png);
+    background-size: contain;
+    width: 2ex;
+    height: 1ex;
+    margin-right: 0.75ex;
+}
+
+header.glob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    padding: 2.5em 0 1.5em;
+    background-image: url(../var/bar.png);
+    background-color: blue;
+    background-position: center;
+    color: #223344;
+}
+
+header.glob img, header.glob h1, header.glob p {
+    margin: 0.5px;
+    padding: 0.33em;
+    text-align: center;
+    font-weight: 200;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header.glob img {
+    background-color: rgba(0, 127, 155, 0.75);
+    height: 2.5em;
+}
+
+main.glob {
+    margin: 3.33em;
+}
+
+main.glob section {
+    display: flex;
+}
+
+main.glob section aside {
+    width: 15em;
+}
+
+table {
+    display: block;
+    flex-grow: 1;
+    background-color: #6699cc;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+    width: 100%;
+}
+
+th {
+    padding-left: 1ex;
+    font-variant-caps: small-caps;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 0.5em;
+}
+
+td.time {
+    width: 5ex;
+    font-family: Georgia, serif;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+th {
+    font-variant-caps: small-caps;
+    background-color: black;
+    color: white;
+}
+
+td, th {
+    vertical-align: top;
+}
+
+.set {
+    display: flex;
+}
+
+.set div {
+    margin: 0.25em;
+    height: 4em;
+    min-width: 6em;
+    width: min-content;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    background-position: center;
+}
+
+.set div.y-vip {
+    background-image: url(../var/vip.png);
+    color: red;
+}
+
+.set div.u-open {
+    background-image: url(../var/open.png);
+    color: green;
+}
+
+td p {
+    margin: 0;
+}
+
+td div p {
+    background-color: rgba(63, 63, 63, 0.5);
+}
